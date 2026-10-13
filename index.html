@@ -1,262 +1,768 @@
-<!DOCTYPE HTML>
-<!--
-    Massively by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-    <head>
-        <title>Joseph Edet's Portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <style>
-            #header {
-                position: relative;
-                overflow: hidden;
-                width: 100%;
-                height: 400px;
-            }
+<!doctype html>
+<html lang="en" data-theme="dark">
 
-            #intro {
-                position: relative;
-                overflow: hidden;
-                width: 100%;
-                min-height: 420px;
-                padding-top: 28px; 
-                box-sizing: border-box;
-            }
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Joseph Edet — Data Scientist & ML Engineer</title>
+	<meta name="description"
+		content="Joseph Edet (Joebass): Data Scientist and ML Engineer in Lagos, building trading, commercial analytics and fraud/AML machine learning systems.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="css/portfolio.css">
+</head>
 
-            /* Passport-style avatar above the heading */
-            #intro .avatar {
-                display: flex;
-                justify-content: center;
-                margin: 24px 0 1.5rem 0; 
-            }
-            #intro .avatar img {
-                width: 200px;
-                height: 240px; 
-                object-fit: cover;
+<body>
 
-                object-position: center -12%;
-                border: 4px solid rgba(255,255,255,0.95);
-                box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-                border-radius: 4px;
-                background: #fff;
-                animation: fadeInAvatar 0.8s ease-in-out forwards;
-                opacity: 0;
-            }
-
-            @media (max-width: 480px) {
-                #intro .avatar img {
-                    width: 140px;
-                    height: 170px;
-                    object-position: center -8%;
-                }
-            }
-
-
-            #intro h1, #intro p {
-                color: #fff;
-                text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-            }
-
-            @keyframes fadeIn {
-                from { opacity: 0; }
-                to { opacity: 0.9; }
-            }
-
-            @keyframes fadeInAvatar {
-                from { opacity: 0; transform: translateY(-6px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-        </style>
-    </head>
-    <body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">                    <div class="avatar" aria-hidden="true"><img src="images/joseph-edet-2.jpeg" alt="Portrait of Joseph Edet" /></div>						<h1>Joseph Edet</h1>
-						<p>A Data Scientist passionate about using the power of data to solve problems</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">JoebassHD</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://linkedin.com/in/joseph-edet-analyst" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://twitter.com/joebasshd" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/Joebasshd" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://medium.com/@joebasshd" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://colab.research.google.com/drive/1BKLTlwOxWDhw22GBiC9enlPKg1TwFab_?usp=sharing">Detecting Credit Card Fraud in e-Commerce</a></h2>
-									<p>This project leverages on Clustering, Deep Learning techniques and Tree models to perform a comparative analysis with the aim of finding the best Machine Learning techniques to tackle credit card fraud in the e-commerce industry</p>
-								</header>
-								<a href="https://colab.research.google.com/drive/1BKLTlwOxWDhw22GBiC9enlPKg1TwFab_?usp=sharing" class="image main"><img src="images/Business-Credit-Cards.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://colab.research.google.com/drive/1BKLTlwOxWDhw22GBiC9enlPKg1TwFab_?usp=sharing" class="button large">View Project</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-
-								<article>
-									<header>
-										<h2><a href="https://github.com/Joebasshd/anomaly-detection-fintech/">Anomaly Detection of Fraudulent Transactions in a Fintech Company</a></h2>
-									</header>
-									<a href="https://github.com/Joebasshd/anomaly-detection-fintech/" class="image fit"><img src="images/anomaly-detection.png" alt="" /></a>
-									<p>This project builds a detection system for fintech transaction logs using Isolation Forest and DBSCAN models, with SHAP-based explainability and robust log parsing to identify suspicious user behavior and fraudulent patterns</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Joebasshd/anomaly-detection-fintech/" class="button">View Project</a></li>
-									</ul>
-								</article>
-
-                                <article>
-									<header>
-										<h2><a href="https://github.com/Joebasshd/calibrating-stochastic-and-interest-rate-models">Calibrating Stochastic Volatility & Interest Rate Models</a></h2>
-									</header>
-									<a href="https://github.com/Joebasshd/calibrating-stochastic-and-interest-rate-models" class="image fit"><img src="images/heston.png" alt="" /></a>
-									<p>Perform several key tasks in quantitative finance: calibrate the Heston stochastic volatility model to option data using both the Lewis (2001) and Carr-Madan (1999) Fourier pricing methods, then extends this to the Bates (1996) model. Finally, calibrate the CIR model to the Euribor term structure and simulate future interest rates, demonstrating the application of stochastic models to both equity derivatives and interest rates.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Joebasshd/calibrating-stochastic-and-interest-rate-models" class="button">View Project</a></li>
-									</ul>
-								</article>
-
-                                <article>
-									<header>
-										<h2><a href="https://colab.research.google.com/drive/1rEbZ2Vjqo7BS_s99BKYfB_85G5bf9z5k?usp=sharing">An Intelligent Approach for Predicting Stock Market Movements</a></h2>
-									</header>
-									<a href="https://colab.research.google.com/drive/1rEbZ2Vjqo7BS_s99BKYfB_85G5bf9z5k?usp=sharing" class="image fit"><img src="images/stock-market-portfolio.jpeg" alt="" /></a>
-									<p>This project is an attempt to replicate the methodology of "An Intelligent Approach for Predicting Stock Market Movements in Emerging Markets Using Optimized Technical Indicators and Neural Networks" paper by Alma Rocío Sagaceta-Mejía, Máximo Eduardo Sánchez-Gutiérrez, and Julián Alberto Fresán-Figueroa.</p>
-									<ul class="actions special">
-										<li><a href="https://colab.research.google.com/drive/1rEbZ2Vjqo7BS_s99BKYfB_85G5bf9z5k?usp=sharing" class="button">View Project</a></li>
-									</ul>
-								</article>
-
-								<article>
-									<header>
-										<h2><a href="https://omdenakaduna-price-surge-nigerian-economy.streamlit.app/">Quick View of Price Surge in Nigeria Economy Using Data Science</a></h2>
-									</header>
-									<a href="https://omdenakaduna-price-surge-nigerian-economy.streamlit.app/" class="image fit"><img src="images/omdena-price-surge.jpg" alt="" /></a>
-									<p>I led the Data preprocessing phase of a project at Omdena that visualizes the recent price surge in Nigeria</p>
-									<ul class="actions special">
-										<li><a href="https://omdenakaduna-price-surge-nigerian-economy.streamlit.app/" class="button">View Dashboard</a></li>
-									</ul>
-								</article>
-
-								<article>
-									<header>
-										<h2><a href="https://mavenanalytics.io/project/9875">Visualizing Apple's Carbon Neutrality Progress</a></h2>
-									</header>
-									<a href="https://mavenanalytics.io/project/9875" class="image fit"><img src="images/apple1.png" alt="" /></a>
-									<p>For this Maven Environmental Challenge, Apple has a lofty goal of achieving Carbon neutrality by 2030. I worked as a journalist and Data visualization enthusiast, providing a report on their progress.</p>
-									<ul class="actions special">
-										<li><a href="https://mavenanalytics.io/project/9875" class="button">View Project</a></li>
-									</ul>
-								</article>
-
-								<article>
-									<header>
-										<h2><a href="https://github.com/Joebasshd/crypto-price-movement-prediction-bitgrit">Crypto Price Movement Prediction</a></h2>
-									</header>
-									<a href="https://github.com/Joebasshd/crypto-price-movement-prediction-bitgrit" class="image fit"><img src="images/crypto.jpg" alt="" /></a>
-									<p>I built a classification model that predicts whether the price of a crypto asset rises or falls in a two-week window.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Joebasshd/crypto-price-movement-prediction-bitgrit" class="button">View Project</a></li>
-									</ul>
-								</article>
-
-								<article>
-									<header>
-										<h2><a href="https://github.com/Joebasshd/we-rate-dogs">Data Wrangling with Python</a></h2>
-									</header>
-									<a href="https://github.com/Joebasshd/we-rate-dogs" class="image fit"><img src="images/puppy.jpg" alt="" style="height: 16 rem;" /></a>
-									<p>I gathered, accessed and cleaned data from a Twitter account @WeRateDogs. Python's libraries such as Pandas, NumPy, Matplotlib & Seaborn were used to gather data manually and programatically, access three datasets for quality and tidiness issues, fix the issues identified (data cleaning), then derive insights from the clean data.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Joebasshd/we-rate-dogs" class="button">View Project</a></li>
-									</ul>
-								</article>
-								
-								<article>
-									<header>
-										<h2><a href="https://github.com/Joebasshd/ProsperLoanDataExploration">Prosper Loan Dataset</a></h2>
-									</header>
-									<a href="https://github.com/Joebasshd/ProsperLoanDataExploration" class="image fit"><img src="images/prosper.png" alt="" style="height: 16rem;" /></a>
-									<p>Using mostly visualizations with Python, I explored a dataset from Prosper - a loan company. I used Matplotlib & Seaborn to create univariate, bivariate and multivariate plots to find out what factors influences the Annual Percentage Rate (APR) of a loan.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Joebasshd/ProsperLoanDataExploration" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Calabar, Cross River State, Nigeria</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+234) 916-606-2825</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="joebasshd@gmail.com">joebasshd@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://linkedin.com/in/joseph-edet-analyst" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://twitter.com/joebasshd" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://github.com/Joebasshd" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://medium.com/@joebasshd" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Joseph Edet</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
+	<!-- Navigation -->
+	<header class="nav" id="nav">
+		<div class="container nav__inner">
+			<a href="#top" class="nav__logo" aria-label="Joebass — back to top"><span
+					class="nav__logo-prompt">~/</span><span class="gradient-text">Joebass</span><span
+					class="nav__logo-caret">_</span></a>
+			<nav class="nav__links" id="navLinks">
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#experience">Experience</a>
+				<a href="#certifications">Certifications</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<div class="nav__actions">
+				<button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme"><i
+						class="fa-solid fa-sun"></i></button>
+				<a class="btn btn--sm btn--primary nav__resume"
+					href="https://docs.google.com/document/d/1TIZVBWgqMeRoEe2TeWhhc0sRc2tSIZQi/edit?usp=sharing&ouid=113759943970432405711&rtpof=true&sd=true"
+					target="_blank" rel="noopener">Resume</a>
+				<button class="icon-btn nav__burger" id="burger" aria-label="Open menu"><i
+						class="fa-solid fa-bars"></i></button>
 			</div>
+		</div>
+	</header>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<main id="top">
 
-	</body>
+		<!-- Hero -->
+		<section class="hero">
+			<div class="hero__grid-bg" aria-hidden="true"></div>
+			<div class="container hero__inner">
+				<div class="hero__text">
+					<p class="mono eyebrow"><span class="status-dot"></span>Lagos, Nigeria · Open to opportunities</p>
+					<h1>Hi, I'm <span class="gradient-text">Joseph Edet</span>.</h1>
+					<p class="hero__role mono">&gt; <span id="typed">Data Scientist</span><span class="caret">_</span>
+					</p>
+					<p class="hero__lead">Data Scientist &amp; ML Engineer with <strong>4 years' experience</strong>
+						turning large, complex datasets into <strong>trading, commercial and fraud-prevention
+							decisions</strong> — from a live high-frequency trading system to production fraud &amp; AML
+						detection.</p>
+					<div class="hero__cta">
+						<a href="#projects" class="btn btn--primary">View projects <i
+								class="fa-solid fa-arrow-down"></i></a>
+						<a href="#contact" class="btn btn--ghost">Get in touch</a>
+					</div>
+					<div class="hero__social">
+						<a href="https://github.com/Joebasshd" target="_blank" rel="noopener" aria-label="GitHub"><i
+								class="fa-brands fa-github"></i></a>
+						<a href="https://linkedin.com/in/joseph-edet-analyst" target="_blank" rel="noopener"
+							aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://medium.com/@joebasshd" target="_blank" rel="noopener" aria-label="Medium"><i
+								class="fa-brands fa-medium"></i></a>
+						<a href="https://twitter.com/joebasshd" target="_blank" rel="noopener"
+							aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+						<a href="mailto:joebasshd@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+					</div>
+				</div>
+				<div class="hero__visual">
+					<div class="hero__photo">
+						<img src="./images/joebassssss.jpg" alt="Portrait of Joseph Edet">
+					</div>
+					<div class="code-card mono" aria-hidden="true">
+						<div class="code-card__bar"><span></span><span></span><span></span><em>joseph.py</em></div>
+						<pre><span class="k">class</span> <span class="f">JosephEdet</span>:
+    role   = [<span class="s">"Data Scientist"</span>,
+              <span class="s">"ML Engineer"</span>,
+              <span class="s">"Quant Developer"</span>]
+    focus  = [<span class="s">"fraud"</span>, <span class="s">"aml"</span>, <span class="s">"markets"</span>]
+    stack  = [<span class="s">"python"</span>, <span class="s">"spark"</span>, <span class="s">"mlflow"</span>]
+    <span class="k">def</span> <span class="f">ship</span>(self): <span class="k">return</span> <span class="s">"value"</span></pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section class="section" id="about">
+			<div class="container">
+				<div class="section__head">
+					<p class="mono section__num">01.</p>
+					<h2>About me</h2>
+				</div>
+				<div class="about">
+					<div class="about__text">
+						<p>I'm a <strong>Data Scientist &amp; Machine Learning Engineer</strong> with 4 years of
+							experience analysing large, complex datasets to inform <strong>trading and commercial
+								decisions</strong>. I develop, deploy and maintain predictive models — time-series,
+							regression and tree-based methods — including a <strong>live high-frequency trading system
+								with a 70% signal hit-rate</strong>.</p>
+						<p>Today I build the machine learning behind <strong>Fraudspect</strong>, a fraud and AML
+							compliance platform. I've also shipped AI/LLM and NLP systems, from automated feedback
+							assistants
+							to natural-language querying, and I automate end-to-end data workflows with
+							<strong>Python, SQL and Apache Spark</strong>, deployed through MLflow and CI/CD.
+						</p>
+						<p>I'm currently completing an <strong>MSc in Financial Engineering</strong> at WorldQuant
+							University. I'm known for turning ambiguous, high-impact business problems into reliable,
+							data-driven solutions alongside traders, product teams and commercial stakeholders.</p>
+						<a href="https://docs.google.com/document/d/1TIZVBWgqMeRoEe2TeWhhc0sRc2tSIZQi/edit?usp=sharing&ouid=113759943970432405711&rtpof=true&sd=true"
+							class="btn btn--ghost" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i>
+							View full resume</a>
+					</div>
+					<aside class="about__side">
+						<img src="./images/img-1-joe.jpeg" alt="Joseph Edet" class="about__photo">
+						<ul class="facts">
+							<li><i class="fa-solid fa-location-dot"></i><span>Lagos, Nigeria</span></li>
+							<li><i class="fa-solid fa-briefcase"></i><span>AI &amp; ML Engineer · Platview
+									Technologies</span>
+							</li>
+							<li><i class="fa-solid fa-graduation-cap"></i><span>MSc Financial Engineering ·
+									WorldQuant</span></li>
+							<li><i class="fa-solid fa-flask"></i><span>BSc Pure &amp; Industrial Chemistry · UNN</span>
+							</li>
+						</ul>
+					</aside>
+				</div>
+
+				<div class="stats">
+					<div class="stat"><span class="stat__num mono">4+</span><span>years in data science &amp; ML</span>
+					</div>
+					<div class="stat"><span class="stat__num mono">70%</span><span>signal hit-rate on a live HFT
+							system</span></div>
+					<div class="stat"><span class="stat__num mono">12</span><span>A/B tests &amp; causal studies
+							led</span></div>
+					<div class="stat"><span class="stat__num mono">1,500+</span><span>data scientists &amp; analysts
+							mentored</span></div>
+				</div>
+
+				<div class="focus-grid">
+					<article class="focus">
+						<i class="fa-solid fa-shield-halved"></i>
+						<h3>Fraud, AML &amp; Risk</h3>
+						<p>Real-time fraud monitoring, anti-money-laundering and adverse-media models, built to be
+							explainable and audit-ready for compliance teams.</p>
+					</article>
+					<article class="focus">
+						<i class="fa-solid fa-chart-line"></i>
+						<h3>Trading &amp; Quant</h3>
+						<p>Signal generation, backtesting and live deployment with position sizing, drawdown limits
+							and stop-loss controls. I also do time-series and stochastic modelling.</p>
+					</article>
+					<article class="focus">
+						<i class="fa-solid fa-flask-vial"></i>
+						<h3>Commercial Analytics</h3>
+						<p>Pricing optimisation, segmentation, lead scoring and propensity models, backed by A/B
+							tests and causal inference that change real business numbers.</p>
+					</article>
+					<article class="focus">
+						<i class="fa-solid fa-wand-magic-sparkles"></i>
+						<h3>Applied AI &amp; LLMs</h3>
+						<p>RAG, LangChain and NLP systems, including automated feedback assistants, natural-language
+							querying and fine-tuned intent classifiers.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section class="section section--alt" id="skills">
+			<div class="container">
+				<div class="section__head">
+					<p class="mono section__num">02.</p>
+					<h2>Tech stack</h2>
+				</div>
+				<div class="skills">
+					<div class="skill-group">
+						<h3><i class="fa-solid fa-chart-line"></i> Predictive Modelling</h3>
+						<ul class="chips">
+							<li>Time-series forecasting</li>
+							<li>Regression</li>
+							<li>Random Forest</li>
+							<li>Gradient Boosting</li>
+							<li>XGBoost / LightGBM</li>
+							<li>Classification</li>
+							<li>Risk modelling</li>
+							<li>Propensity modelling</li>
+							<li>Isolation Forest</li>
+							<li>SHAP</li>
+						</ul>
+					</div>
+					<div class="skill-group">
+						<h3><i class="fa-solid fa-wand-magic-sparkles"></i> Applied AI, GenAI &amp; NLP</h3>
+						<ul class="chips">
+							<li>LangChain</li>
+							<li>RAG</li>
+							<li>LLM decision support</li>
+							<li>Prompt automation</li>
+							<li>Hugging Face Transformers</li>
+							<li>LoRA fine-tuning</li>
+							<li>PyTorch</li>
+							<li>TensorFlow</li>
+							<li>Clustering</li>
+						</ul>
+					</div>
+					<div class="skill-group">
+						<h3><i class="fa-solid fa-square-root-variable"></i> Trading &amp; Quant</h3>
+						<ul class="chips">
+							<li>Signal generation</li>
+							<li>Backtesting</li>
+							<li>Position sizing</li>
+							<li>Risk controls</li>
+							<li>Stochastic models</li>
+							<li>Derivatives pricing</li>
+							<li>Monte Carlo</li>
+							<li>Portfolio optimisation</li>
+						</ul>
+					</div>
+					<div class="skill-group">
+						<h3><i class="fa-solid fa-database"></i> Data Engineering</h3>
+						<ul class="chips">
+							<li>Python</li>
+							<li>SQL</li>
+							<li>Apache Spark / PySpark</li>
+							<li>pandas</li>
+							<li>NumPy</li>
+							<li>scikit-learn</li>
+							<li>ETL pipelines</li>
+							<li>Data warehousing</li>
+							<li>PostgreSQL</li>
+							<li>Snowflake</li>
+							<li>Oracle</li>
+						</ul>
+					</div>
+					<div class="skill-group">
+						<h3><i class="fa-solid fa-gears"></i> MLOps &amp; Cloud</h3>
+						<ul class="chips">
+							<li>MLflow</li>
+							<li>CI/CD</li>
+							<li>FastAPI</li>
+							<li>Model versioning</li>
+							<li>Monitoring</li>
+							<li>AWS</li>
+							<li>Azure AI</li>
+							<li>Git</li>
+						</ul>
+					</div>
+					<div class="skill-group">
+						<h3><i class="fa-solid fa-flask-vial"></i> Experimentation &amp; BI</h3>
+						<ul class="chips">
+							<li>A/B testing</li>
+							<li>Causal inference</li>
+							<li>Streamlit</li>
+							<li>Power BI</li>
+							<li>Matplotlib / Seaborn</li>
+							<li>Jupyter</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="section" id="projects">
+			<div class="container">
+				<div class="section__head">
+					<p class="mono section__num">03.</p>
+					<h2>Featured projects</h2>
+				</div>
+
+				<div class="filters" role="tablist" aria-label="Filter projects">
+					<button class="filter is-active" data-filter="all">All</button>
+					<button class="filter" data-filter="quant">Quant Finance</button>
+					<button class="filter" data-filter="fraud">Fraud &amp; Anomaly</button>
+					<button class="filter" data-filter="nlp">NLP &amp; LLMs</button>
+					<button class="filter" data-filter="analytics">Analytics &amp; Viz</button>
+				</div>
+
+				<div class="projects">
+
+					<article class="card card--feature" data-tags="fraud">
+						<div class="card__media card__media--icon"><i class="fa-solid fa-user-shield"></i>
+							<span class="badge">Product · Live</span>
+						</div>
+						<div class="card__body">
+							<h3>Fraudspect — Fraud &amp; AML Compliance Platform</h3>
+							<p>A fraud and AML platform for African markets. It covers real-time transaction monitoring,
+								KYC, and sanctions, PEP and adverse-media screening, with case management and regulatory
+								reporting on one dashboard. I build, deploy and maintain the machine learning models
+								that
+								run its fraud, AML and adverse-media detection.</p>
+							<ul class="tags">
+								<li>Real-time scoring</li>
+								<li>AML</li>
+								<li>Adverse media</li>
+								<li>MLOps</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://getfraudspect.com" target="_blank" rel="noopener"><i
+									class="fa-solid fa-arrow-up-right-from-square"></i> getfraudspect.com</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="quant">
+						<div class="card__media card__media--icon"><i class="fa-solid fa-chart-column"></i>
+							<span class="badge">Capstone · In progress</span>
+						</div>
+						<div class="card__body">
+							<h3>Neural-Network Signals for Systematic ETF Portfolios</h3>
+							<p>MScFE capstone: LASSO, LightGBM and LSTM classifiers forecast 5-day direction for 11 US
+								sector ETFs; probabilities become volatility-scaled long/flat signals targeting 10% vol,
+								benchmarked after costs on an expanding walk-forward (2008–2026).</p>
+							<ul class="tags">
+								<li>LightGBM</li>
+								<li>LSTM</li>
+								<li>Walk-forward</li>
+								<li>pytest</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/nn-etf-portfolio-signals" target="_blank"
+								rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="nlp">
+						<div class="card__media card__media--icon"><i class="fa-solid fa-microphone-lines"></i></div>
+						<div class="card__body">
+							<h3>Irembo Voice AI — Intent Classification</h3>
+							<p>A multilingual intent classifier for government-service access that handles noisy,
+								code-switched voice transcripts across four languages. AfroXLMR is fine-tuned with LoRA,
+								with back-translation augmentation, a "data clinic" that audits label quality, and a
+								FastAPI inference service.</p>
+							<ul class="tags">
+								<li>Transformers</li>
+								<li>LoRA</li>
+								<li>FastAPI</li>
+								<li>Macro-F1</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/irembo-voice-ai" target="_blank" rel="noopener"><i
+									class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="fraud">
+						<div class="card__media"><img src="./images/anomaly-detection.png" alt="" loading="lazy"></div>
+						<div class="card__body">
+							<h3>Anomaly Detection of Fraudulent Fintech Transactions</h3>
+							<p>Detection system for fintech transaction logs using Isolation Forest and DBSCAN, with
+								robust log parsing and SHAP-based explainability to surface suspicious user behaviour.
+							</p>
+							<ul class="tags">
+								<li>Isolation Forest</li>
+								<li>DBSCAN</li>
+								<li>SHAP</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/anomaly-detection-fintech" target="_blank"
+								rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="fraud">
+						<div class="card__media"><img src="./images/Business-Credit-Cards.png" alt="" loading="lazy">
+						</div>
+						<div class="card__body">
+							<h3>Detecting Credit Card Fraud in E-commerce</h3>
+							<p>Comparative study of clustering, deep learning (CNN) and tree models (Random Forest,
+								XGBoost) with PCA features and class-imbalance handling to find the best approach to
+								e-commerce card fraud.</p>
+							<ul class="tags">
+								<li>XGBoost</li>
+								<li>CNN</li>
+								<li>PCA</li>
+								<li>imblearn</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/fraud-detection-e-commerce" target="_blank"
+								rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+							<a href="https://colab.research.google.com/drive/1BKLTlwOxWDhw22GBiC9enlPKg1TwFab_?usp=sharing"
+								target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> Notebook</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="quant">
+						<div class="card__media"><img src="./images/heston.png" alt="" loading="lazy"></div>
+						<div class="card__body">
+							<h3>Calibrating Stochastic Volatility &amp; Interest-Rate Models</h3>
+							<p>Calibrates Heston to option data via Lewis (2001) and Carr-Madan (1999) Fourier pricing,
+								extends to Bates (1996) jumps, then fits CIR to the Euribor term structure and simulates
+								future rates.</p>
+							<ul class="tags">
+								<li>Heston</li>
+								<li>Bates</li>
+								<li>CIR</li>
+								<li>FFT</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/calibrating-stochastic-and-interest-rate-models"
+								target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="quant">
+						<div class="card__media card__media--icon"><i class="fa-solid fa-wave-square"></i></div>
+						<div class="card__body">
+							<h3>Challenges in Financial Time-Series Models</h3>
+							<p>Tackles non-stationarity (unit roots, cointegration, ECMs on Visa/Mastercard), Markov
+								regime switching and multicollinearity (SPY/IVV/VOO) — derived, estimated, diagnosed and
+								documented.</p>
+							<ul class="tags">
+								<li>Cointegration</li>
+								<li>ECM</li>
+								<li>Regime switching</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/challenges-in-time-series-models" target="_blank"
+								rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="quant">
+						<div class="card__media"><img src="./images/stock-market-portfolio.jpeg" alt="" loading="lazy">
+						</div>
+						<div class="card__body">
+							<h3>Predicting Stock Market Movements with Neural Networks</h3>
+							<p>Replication of Sagaceta-Mejía et al.'s method for emerging markets using optimised
+								technical indicators and neural networks — the foundation later extended in the ETF
+								capstone.</p>
+							<ul class="tags">
+								<li>Neural nets</li>
+								<li>Technical indicators</li>
+								<li>Paper replication</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://colab.research.google.com/drive/1rEbZ2Vjqo7BS_s99BKYfB_85G5bf9z5k?usp=sharing"
+								target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> Notebook</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="fraud">
+						<div class="card__media card__media--icon"><i class="fa-solid fa-industry"></i></div>
+						<div class="card__body">
+							<h3>Anomaly Detection on Offshore Platform Sensors</h3>
+							<p>Flags operational anomalies in multivariate sensor data using Mahalanobis distance, PCA
+								reconstruction error and Isolation Forest, with duration rules to separate incidents
+								from
+								a "new normal".</p>
+							<ul class="tags">
+								<li>PCA</li>
+								<li>Mahalanobis</li>
+								<li>Isolation Forest</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/anomaly-detection-sensor-readings" target="_blank"
+								rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="quant">
+						<div class="card__media"><img src="./images/crypto.jpg" alt="" loading="lazy"></div>
+						<div class="card__body">
+							<h3>Crypto Price Movement Prediction</h3>
+							<p>Classification model (Bitgrit competition) predicting whether a crypto asset's price
+								rises or falls over a two-week window.</p>
+							<ul class="tags">
+								<li>Classification</li>
+								<li>Feature engineering</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/crypto-price-movement-prediction-bitgrit"
+								target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="nlp">
+						<div class="card__media card__media--icon"><i class="fa-solid fa-dna"></i></div>
+						<div class="card__body">
+							<h3>GenoSQL-AI</h3>
+							<p>An open-source framework that combines PostgreSQL hybrid data models with AI-powered
+								natural-language querying. It turns plain-English questions into structured data access
+								for scalable, low-cost genomic analysis.</p>
+							<ul class="tags">
+								<li>PostgreSQL</li>
+								<li>Text-to-SQL</li>
+								<li>LLMs</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://github.com/Joebasshd/GenoSQL-AI" target="_blank" rel="noopener"><i
+									class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="analytics">
+						<div class="card__media"><img src="./images/omdena-price-surge.jpg" alt="" loading="lazy"></div>
+						<div class="card__body">
+							<h3>Price Surge in the Nigerian Economy (Omdena)</h3>
+							<p>Led the data-preprocessing phase of an Omdena collaborative project visualising the
+								recent
+								price surge in Nigeria, shipped as an interactive Streamlit dashboard.</p>
+							<ul class="tags">
+								<li>Streamlit</li>
+								<li>Data cleaning</li>
+								<li>Team lead</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://omdenakaduna-price-surge-nigerian-economy.streamlit.app/" target="_blank"
+								rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live dashboard</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="analytics">
+						<div class="card__media"><img src="./images/apple1.png" alt="" loading="lazy"></div>
+						<div class="card__body">
+							<h3>Visualising Apple's Carbon-Neutrality Progress</h3>
+							<p>Maven Environmental Challenge entry: a data-journalism report on Apple's progress toward
+								carbon neutrality by 2030.</p>
+							<ul class="tags">
+								<li>Data viz</li>
+								<li>Storytelling</li>
+							</ul>
+						</div>
+						<div class="card__links">
+							<a href="https://mavenanalytics.io/project/9875" target="_blank" rel="noopener"><i
+									class="fa-solid fa-arrow-up-right-from-square"></i> View report</a>
+						</div>
+					</article>
+				</div>
+				<div class="center">
+					<a href="https://github.com/Joebasshd?tab=repositories" class="btn btn--ghost" target="_blank"
+						rel="noopener"><i class="fa-brands fa-github"></i> All repositories</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience -->
+		<section class="section section--alt" id="experience">
+			<div class="container">
+				<div class="section__head">
+					<p class="mono section__num">04.</p>
+					<h2>Experience &amp; education</h2>
+				</div>
+				<ol class="timeline">
+					<li class="timeline__item">
+						<span class="timeline__date mono">Aug 2026 — Present</span>
+						<h3>AI &amp; Machine Learning Engineer <span class="muted">· Platview Technologies</span></h3>
+						<ul>
+							<li>Build, deploy and maintain the production machine learning behind <a class="inline-link"
+									href="https://getfraudspect.com" target="_blank" rel="noopener">Fraudspect</a>. The
+								models cover real-time fraud detection and monitoring, anti-money-laundering (AML)
+								detection, and adverse-media screening.</li>
+							<li>Lead the AI and ML strategy for Platview's security products. I design explainable,
+								audit-ready detection systems with feedback loops, so cases that analysts confirm or
+								clear
+								go back into retraining the models.</li>
+						</ul>
+					</li>
+					<li class="timeline__item">
+						<span class="timeline__date mono">Jan 2024 — May 2026</span>
+						<h3>Lead Data Scientist <span class="muted">· PSP Analytics</span></h3>
+						<ul>
+							<li>Designed ML models for pricing optimisation, customer segmentation and lead scoring,
+								<strong>lifting conversion by 12%</strong> and shaping CVM and retention decisions.
+							</li>
+							<li>Engineered Python, SQL and PySpark pipelines across 6 business units, <strong>cutting
+									data prep and training time by 40%</strong>.</li>
+							<li>Led 35 A/B tests and causal-inference studies that drove an <strong>8% increase in
+									average order value</strong>.</li>
+							<li>Built MLflow MLOps pipelines with CI/CD, versioning and monitoring, <strong>cutting
+									deployment time by 65% and incidents by 45%</strong>.</li>
+							<li>Shipped FastAPI and Streamlit apps that cut insight turnaround time by about 30%.
+								Mentored
+								15+ junior data scientists and analysts, cutting onboarding time by 30%.</li>
+						</ul>
+					</li>
+					<li class="timeline__item">
+						<span class="timeline__date mono">Jan 2026 — Jun 2026</span>
+						<h3>ML Engineer (Quantitative Developer) <span class="muted">· FloatEdge Capital</span></h3>
+						<ul>
+							<li>Developed and deployed a research-driven <strong>high-frequency trading system on
+									XAUUSD</strong> that achieved a <strong>70% signal hit-rate</strong> in live
+								trading.</li>
+							<li>Built and backtested time-series and signal-generation models on 10 years of market
+								data, then took the system live for real-time trading decisions.</li>
+							<li>Implemented risk controls (position sizing, drawdown limits and stop-loss logic) and
+								built
+								low-latency data pipelines that <strong>cut inference and execution latency by
+									20%</strong>.</li>
+						</ul>
+					</li>
+					<li class="timeline__item">
+						<span class="timeline__date mono">Mar 2025 — Jul 2025</span>
+						<h3>AI / Machine Learning Engineer <span class="muted">· The Factory Place</span></h3>
+						<ul>
+							<li>Architected and deployed production AI systems for personalisation, segmentation and
+								automated decision support.</li>
+							<li>Built an NLP/LLM automated feedback and grading assistant that <strong>cut manual review
+									workload by 40%</strong>.</li>
+							<li>Developed a career-path recommendation engine using clustering and pattern recognition.
+							</li>
+						</ul>
+					</li>
+					<li class="timeline__item">
+						<span class="timeline__date mono">Apr 2023 — Jul 2024</span>
+						<h3>Data &amp; Product Analyst <span class="muted">· PutHand</span></h3>
+						<ul>
+							<li>Architected end-to-end data infrastructure (ingestion, normalised schemas and a
+								warehouse layer) that powers 32 downstream reports.</li>
+							<li>Built Isolation Forest fraud-detection models with <strong>92% recall and 89%
+									precision</strong>, preventing an estimated ₦560K (42%) in fraud losses.</li>
+							<li>Automated Python and SQL pipelines that process high-volume daily transaction data.</li>
+						</ul>
+					</li>
+				</ol>
+
+				<h3 class="subhead mono">// education</h3>
+				<div class="edu">
+					<div class="edu__item">
+						<div class="cert__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+						<div>
+							<span class="timeline__date mono">Jan 2025 — Present</span>
+							<h3>MSc Financial Engineering <span class="muted">(in view)</span></h3>
+							<p class="muted">WorldQuant University</p>
+							<p class="edu__course">Quantitative risk modelling · Credit risk · Time series · Stochastic
+								processes · Optimisation · Derivatives pricing · Monte Carlo · Portfolio optimisation
+							</p>
+						</div>
+					</div>
+					<div class="edu__item">
+						<div class="cert__icon"><i class="fa-solid fa-flask"></i></div>
+						<div>
+							<span class="timeline__date mono">Nov 2015 — Jun 2021</span>
+							<h3>BSc Pure &amp; Industrial Chemistry</h3>
+							<p class="muted">University of Nigeria, Nsukka</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Certifications -->
+		<section class="section" id="certifications">
+			<div class="container">
+				<div class="section__head">
+					<p class="mono section__num">05.</p>
+					<h2>Certifications &amp; awards</h2>
+				</div>
+				<a class="award" href="https://github.com/Joebasshd/Datafest-Data-Science-Project_Data_Dynasty"
+					target="_blank" rel="noopener">
+					<div class="award__icon"><i class="fa-solid fa-trophy"></i></div>
+					<div>
+						<span class="timeline__date mono">Oct 2023</span>
+						<h3>1st Runner-Up — DataFestAfrica 2023 Datathon</h3>
+						<p class="muted">Built a fraud detection model and an end-to-end data pipeline (Snowflake →
+							transform → Power BI) in a 3-person team, then presented the findings under a tight
+							deadline.</p>
+					</div>
+				</a>
+				<div class="certs">
+					<div class="cert">
+						<div class="cert__icon"><i class="fa-brands fa-microsoft"></i></div>
+						<div>
+							<h3>Azure AI Fundamentals</h3>
+							<p class="muted">Microsoft</p>
+						</div>
+						<span class="cert__date mono">May 2026</span>
+					</div>
+					<div class="cert">
+						<div class="cert__icon"><i class="fa-solid fa-square-root-variable"></i></div>
+						<div>
+							<h3>Foundations of Financial Engineering</h3>
+							<p class="muted">WorldQuant University</p>
+						</div>
+						<span class="cert__date mono">May 2025</span>
+					</div>
+					<div class="cert">
+						<div class="cert__icon"><i class="fa-solid fa-microchip"></i></div>
+						<div>
+							<h3>Fundamentals of Deep Learning</h3>
+							<p class="muted">NVIDIA</p>
+						</div>
+						<span class="cert__date mono">Mar 2025</span>
+					</div>
+					<div class="cert">
+						<div class="cert__icon"><i class="fa-solid fa-chart-simple"></i></div>
+						<div>
+							<h3>Applied Data Science</h3>
+							<p class="muted">WorldQuant University</p>
+						</div>
+						<span class="cert__date mono">Apr 2024</span>
+					</div>
+					<div class="cert">
+						<div class="cert__icon"><i class="fa-solid fa-scale-balanced"></i></div>
+						<div>
+							<h3>ISO/IEC 42001 Implementer</h3>
+							<p class="muted">PECB</p>
+						</div>
+						<span class="cert__date mono">Apr 2024</span>
+					</div>
+					<div class="cert">
+						<div class="cert__icon"><i class="fa-solid fa-award"></i></div>
+						<div>
+							<h3>IBM Data Analyst Specialization</h3>
+							<p class="muted">IBM · Coursera</p>
+						</div>
+						<span class="cert__date mono">Nov 2022</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="section section--alt contact" id="contact">
+			<div class="container contact__inner">
+				<p class="mono section__num">06. What's next?</p>
+				<h2>Let's build something together</h2>
+				<p>I'm open to data science, ML engineering and quant roles, as well as collaborations on fraud, risk
+					and
+					finance problems. My inbox is always open.</p>
+				<a href="mailto:joebasshd@gmail.com" class="btn btn--primary btn--lg"><i
+						class="fa-solid fa-envelope"></i> joebasshd@gmail.com</a>
+				<div class="contact__links">
+					<a href="https://linkedin.com/in/joseph-edet-analyst" target="_blank" rel="noopener"><i
+							class="fa-brands fa-linkedin"></i> LinkedIn</a>
+					<a href="https://github.com/Joebasshd" target="_blank" rel="noopener"><i
+							class="fa-brands fa-github"></i> GitHub</a>
+					<a href="https://medium.com/@joebasshd" target="_blank" rel="noopener"><i
+							class="fa-brands fa-medium"></i> Medium</a>
+					<a href="https://linktr.ee/josephedet" target="_blank" rel="noopener"><i
+							class="fa-solid fa-link"></i> Linktree</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer__inner mono">
+			<p>© <span id="year">2026</span> Joseph Edet</p>
+			<a href="#top">Back to top ↑</a>
+		</div>
+	</footer>
+
+	<script src="js/portfolio.js"></script>
+</body>
+
 </html>
-
-
